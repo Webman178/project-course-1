@@ -3,13 +3,13 @@ public class Employee {
     private static int idGenerator = 1;
 
     private String fullName;
-    //private int id;
+    private int id;
     private int salary;
     private int department;
 
     public Employee(String fullName, int salary, int department) {
         this.fullName = fullName;
-        //this.id = id;
+        this.id = idGenerator++;;
         this.salary = salary;
         this.department = department;
     }
